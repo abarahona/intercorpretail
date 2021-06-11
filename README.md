@@ -1,7 +1,9 @@
 project: microservice intercorpretail 
 
-pasos para ejecutar la aplicacion: 
-	1) se debe crear la base de datos "db_intercorpretail" con la tabla "cliente" (a continuación el script). He usado mysql como motor de base de datos.  
+pasos para ejecutar la aplicacion:
+
+	1) se debe crear la base de datos "db_intercorpretail" con la tabla "cliente" (a continuación el script). He usado mysql como motor de base de datos.
+	
 		CREATE TABLE `db_intercorpretail`.`cliente` (
 		`id` INT NOT NULL AUTO_INCREMENT,
 		`nombre` VARCHAR(60) NOT NULL,
@@ -10,6 +12,7 @@ pasos para ejecutar la aplicacion:
 		`fecha_nacimiento` DATETIME NOT NULL,
 		PRIMARY KEY (`id`));
 		insert into db_intercorpretail.cliente values(null, 'Abel','Barahona',39,'1981-05-01');
+	
 	2) Usaré docker para levantar la base de datos, para ello corrí las siguientes lineas de comando en docker. 
 		para bajarme mysql: 
 			docker pull mysql:latest
