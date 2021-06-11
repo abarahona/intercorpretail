@@ -27,7 +27,12 @@ pasos para ejecutar la aplicacion:
 		- exec: indicamos que vamos a pasar un comando.
 		- it Modo interactivo.
 		- mysql -p: es el comando para entrar a la consola de mysql con el usuario root. 
-	5) Una vez que se ejecuta la línea nos pedirá la contraseña que definimos en MYSQL_ROOT_PASSWORD y estamos dentro del contenedor y podemos lanzar comandos a MYSQl.
+	5)  Una vez que se ejecuta la línea nos pedirá la contraseña que definimos en MYSQL_ROOT_PASSWORD y estamos dentro del contenedor y podemos lanzar comandos a MYSQl.
+		Aquí podremos crear la base de datos y la tabla definida en el paso 1. 
+	
+	6) una vez compilado el proyecto y generado el jar del mismo mediante el comando : mvn install 
+	   podremos correr el siguiente comando : java -jar target/cliente-service-intercorpretail-0.0.1-SNAPSHOT.jar
+	   y tendremos nuestro servicio funcionando. Visitar el siguiente link: http://localhost:8081/swagger-ui.html
 	
 API Rest documentada en Swagger
 Link to Swagger-ui : http://localhost:8081/swagger-ui.html
